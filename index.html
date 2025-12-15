@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventStream - AWS-Powered Real-Time Event System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <i class="fas fa-broadcast-tower"></i>
+                    <span>EventStream</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#" class="active">Home</a>
+                    <a href="#">Architecture</a>
+                    <a href="#">Demo</a>
+                    <a href="#">Documentation</a>
+                    <a href="#">About</a>
+                </div>
+                <div class="auth-buttons">
+                    <button class="btn btn-outline">AWS Console</button>
+                    <button class="btn btn-primary">Deploy</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>AWS-Powered Real-Time Event System</h1>
+            <p>Leveraging AWS SNS, Lambda, and S3 to deliver instant event notifications at scale</p>
+            <div class="hero-buttons">
+                <button class="btn btn-light"><i class="fas fa-play-circle"></i> View Architecture</button>
+                <button class="btn btn-primary"><i class="fas fa-cloud-download-alt"></i> Deploy to AWS</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- AWS Services Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>AWS Services Powering EventStream</h2>
+                <p>Our serverless architecture utilizes these core AWS services for reliable, scalable event delivery</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <h3>Amazon SNS</h3>
+                    <p>Pub/Sub messaging for immediate event distribution to multiple subscribers and endpoints.</p>
+                    <div class="service-status">
+                        <div class="status-dot"></div>
+                        <span>Active - 12,543 messages today</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>AWS Lambda</h3>
+                    <p>Serverless functions that process events, transform data, and trigger notifications.</p>
+                    <div class="service-status">
+                        <div class="status-dot"></div>
+                        <span>Active - 8,231 invocations today</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-door-open"></i>
+                    </div>
+                    <h3></h3>
+                    <p>RESTful endpoints for event submission and management with built-in authorization.</p>
+                    <div class="service-status">
+                        <div class="status-dot"></div>
+                        <span>Active - 5,892 requests today</span>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Amazon S3</h3>
+                    <p>Storage for event logs, user data, and static website hosting with high durability.</p>
+                    <div class="service-status">
+                        <div class="status-dot"></div>
+                        <span>Active - 98.7 MB stored</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Diagram -->
+    <section class="section architecture">
+        <div class="container">
+            <div class="section-header">
+                <h2>System Architecture</h2>
+                <p>How AWS services work together to deliver real-time event announcements</p>
+            </div>
+            <div class="arch-container">
+                <div class="arch-diagram">
+                    <div class="arch-row">
+                        <div class="arch-component">
+                            <div class="arch-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="arch-label">User Device</div>
+                        </div>
+                        <div class="arch-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="arch-component">
+                            <div class="arch-icon">
+                                <i class="fas fa-door-open"></i>
+                            </div>
+                            <div class="arch-label"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="arch-row">
+                        <div class="arch-arrow">
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="arch-row">
+                        <div class="arch-component">
+                            <div class="arch-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <div class="arch-label">Lambda Function</div>
+                        </div>
+                    </div>
+                    
+                    <div class="arch-row">
+                        <div class="arch-arrow">
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="arch-row">
+                        <div class="arch-component">
+                            <div class="arch-icon">
+                                <i class="fas fa-bell"></i>
+                            </div>
+                            <div class="arch-label">SNS Topic</div>
+                        </div>
+                        <div class="arch-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="arch-component">
+                            <div class="arch-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="arch-label">S3 Storage</div>
+                        </div>
+                    </div>
+                    
+                    <div class="arch-row">
+                        <div class="arch-arrow">
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                        <div class="arch-arrow">
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="arch-row">
+                        <div class="arch-component">
+                            <div class="arch-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="arch-label">Email</div>
+                        </div>
+                        <div class="arch-component">
+                            <div class="arch-icon">
+                                <i class="fas fa-sms"></i>
+                            </div>
+                            <div class="arch-label">SMS</div>
+                        </div>
+                        <div class="arch-component">
+                            <div class="arch-icon">
+                                <i class="fas fa-broadcast-tower"></i>
+                            </div>
+                            <div class="arch-label">Push Notification</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Demo Section -->
+    <section class="section demo-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Event Demo</h2>
+                <p>Submit a test event to see the AWS-powered system in action</p>
+            </div>
+            <div class="demo-container">
+                <div class="event-form">
+                    <h3>Create New Event</h3>
+                    <form id="eventForm">
+                        <div class="form-group">
+                            <label for="eventTitle">Event Title</label>
+                            <input type="text" id="eventTitle" class="form-control" placeholder="Enter event title" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="eventMessage">Event Message</label>
+                            <textarea id="eventMessage" class="form-control" rows="4" placeholder="Enter event message" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="eventPriority">Priority Level</label>
+                            <select id="eventPriority" class="form-control">
+                                <option value="low">Low</option>
+                                <option value="medium" selected>Medium</option>
+                                <option value="high">High</option>
+                                <option value="critical">Critical</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            <i class="fas fa-paper-plane"></i> Publish Event
+                        </button>
+                    </form>
+                </div>
+                <div class="event-log">
+                    <h3>
+                        Event Log
+                        <span id="clearLog" style="font-size: 0.9rem; cursor: pointer; color: var(--primary);">Clear Log</span>
+                    </h3>
+                    <div class="log-entries" id="logEntries">
+                        <div class="log-entry">
+                            <div class="log-header">
+                                <div class="log-title">System Started</div>
+                                <div class="log-time">Just now</div>
+                            </div>
+                            <div class="log-message">EventStream system is ready to process events</div>
+                        </div>
+                        <div class="log-entry">
+                            <div class="log-header">
+                                <div class="log-title">AWS Services Connected</div>
+                                <div class="log-time">Just now</div>
+                            </div>
+                            <div class="log-message">SNS, Lambda, , and S3 are all connected and running</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>EventStream</h3>
+                    <p>AWS-powered real-time event announcement system for homelab and enterprise use.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-aws"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>AWS Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Amazon SNS</a></li>
+                        <li><a href="#">AWS Lambda</a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#">Amazon S3</a></li>
+                        <li><a href="#">CloudWatch</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Architecture Guide</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">API Reference</a></li>
+                        <li><a href="#">GitHub Repository</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">AWS Forums</a></li>
+                        <li><a href="#">Troubleshooting</a></li>
+                        <li><a href="#">Service Status</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 EventStream - AWS Serverless Event System. This is a demonstration website for homelab purposes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
