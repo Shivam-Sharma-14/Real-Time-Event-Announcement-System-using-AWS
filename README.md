@@ -115,11 +115,11 @@ The following are some API endpoints used in the project:
 
 👤 Author
 ---------
-The project was created by [Shivam Sharma](https://github.com/Shivam-Sharma-14)., a software developer with a passion for building scalable and secure systems.
+The project was created by [Shivam Sharma](https://github.com/Shivam-Sharma-14).
 
 ✅ Live Website
 ----------------
-The project was created by [Live Website Link]([https://github.com/Shivam-Sharma-14](https://shivam-sharma-14.github.io/Real-Time-Event-Announcement-System-using-AWS/)).
+[Live Website Link](https://shivam-sharma-14.github.io/Real-Time-Event-Announcement-System-using-AWS/).
 
 📝 License
 ---------
