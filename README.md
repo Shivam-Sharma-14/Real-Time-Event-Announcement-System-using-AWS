@@ -117,6 +117,10 @@ The following are some API endpoints used in the project:
 ---------
 The project was created by [Shivam Sharma](https://github.com/Shivam-Sharma-14)., a software developer with a passion for building scalable and secure systems.
 
+✅ Live Website
+----------------
+The project was created by [Live Website Link]([https://github.com/Shivam-Sharma-14](https://shivam-sharma-14.github.io/Real-Time-Event-Announcement-System-using-AWS/)).
+
 📝 License
 ---------
 The project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
